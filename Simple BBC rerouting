@@ -1,0 +1,20 @@
+{
+  "author": "ER",
+	"name": "Redirect BBC",
+	"description": "Route requests to BBC through GB",
+	"unblocker_rules": {
+		"BBC_UK": {
+			"description": "Route requests to BBC from the UK",
+			"link": "http://www.bbc.co.uk",
+			"icon": "http://icongal.com/gallery/image/132178/uk_flag.png",
+			"cmds": [
+				{
+					"hosts": [
+						"bbc.co.uk"
+					],
+					"then": "PROXY GB"
+				}
+			]
+		}
+	}
+}
